@@ -1,0 +1,2 @@
+include ':eventforlivedata'
+rootProject.name='Event For Live Data'
