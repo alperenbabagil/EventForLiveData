@@ -5,7 +5,7 @@ Taken from [JoseAlcerreca](https://github.com/JoseAlcerreca)'s medium post and p
 
 https://medium.com/androiddevelopers/livedata-with-snackbar-navigation-and-other-events-the-singleliveevent-case-ac2622673150
 
-**Installing** 
+## Installing
 
 **Step 1.** Add it in your root build.gradle at the end of repositories:
 
@@ -22,11 +22,11 @@ allprojects {
 
 ```
 dependencies {
-  implementation 'com.github.alperenbabagil:EventForLiveData:1.0.0'
+  implementation 'com.github.alperenbabagil:EventForLiveData:1.1.0'
 }
 ```
 
-**Usage**
+## Usage
 
 Wrap your data with `Event<T>` class. Then use it in `LiveData`
 
@@ -38,6 +38,14 @@ Then observe your viewModel with `EventObserver<T>`
 viewModel.observeMe.observe(this,EventObserver{ myAwesomeModel -> 
     // Every Event instance observed here once
 })
+```
+
+or just use `observeEvent` extension function of `LiveData`
+
+```
+viewModel.observeMe.observeEvent(this){ myAwesomeModel ->
+    // Every Event instance observed here once
+}
 ```
   
   
