@@ -22,7 +22,7 @@ allprojects {
 
 ```
 dependencies {
-  implementation 'com.github.alperenbabagil:EventForLiveData:1.1.0'
+  implementation 'com.github.alperenbabagil:EventForLiveData:1.1.1'
 }
 ```
 
