@@ -39,6 +39,12 @@ viewModel.observeMe.observe(this,EventObserver{ myAwesomeModel ->
     // Every Event instance observed here once
 })
 ```
+
+or just use `observeEvent` extension function of `LiveData`
+
+viewModel.observeMe.observeEvent(this){ myAwesomeModel ->
+    // Every Event instance observed here once
+}
   
   
 
