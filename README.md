@@ -5,7 +5,7 @@ Taken from [JoseAlcerreca](https://github.com/JoseAlcerreca)'s medium post and p
 
 https://medium.com/androiddevelopers/livedata-with-snackbar-navigation-and-other-events-the-singleliveevent-case-ac2622673150
 
-**Installing** 
+###### Installing
 
 **Step 1.** Add it in your root build.gradle at the end of repositories:
 
@@ -26,7 +26,7 @@ dependencies {
 }
 ```
 
-**Usage**
+###### Usage
 
 Wrap your data with `Event<T>` class. Then use it in `LiveData`
 
