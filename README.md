@@ -22,7 +22,7 @@ allprojects {
 
 ```
 dependencies {
-  implementation 'com.github.alperenbabagil:EventForLiveData:1.1.1'
+  implementation 'com.github.alperenbabagil:EventForLiveData:1.2.1'
 }
 ```
 
@@ -44,6 +44,15 @@ or just use `observeEvent` extension function of `LiveData`
 
 ```
 viewModel.observeMe.observeEvent(this){ myAwesomeModel ->
+    // Every Event instance observed here once
+}
+```
+
+even shorter use `observeEvent` extension function of `LifecycleOwner`(Activity,Fragment etc.). 
+Just call `observeEvent` method in your LifecycleOwner:
+
+```
+observeEvent.(viewModel.observeMe){ myAwesomeModel ->
     // Every Event instance observed here once
 }
 ```
